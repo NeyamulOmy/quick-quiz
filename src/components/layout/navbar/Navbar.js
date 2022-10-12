@@ -6,8 +6,8 @@ const Navbar = () => {
         <nav className='nav'>
             <h2>Quick Quiz</h2>
             <div>
-                <a href="#">Home</a>
-                <a href="#">Blog</a>
+                <Link to={'/'}>Home</Link>
+                <Link to={'blog'}>Blog</Link>
             </div>
         </nav>
     );
