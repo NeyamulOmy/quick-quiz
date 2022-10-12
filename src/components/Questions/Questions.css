@@ -1,0 +1,31 @@
+.question {
+    border: 1px solid gray;
+    background-color: cadetblue;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+}
+
+.left-align {
+    text-align: start;
+}
+
+.f20px {
+    font-size: 20px;
+}
+
+.option {
+    border: 1px solid aliceblue;
+    padding: 10px;
+    margin: 10px;
+    background-color: gray;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+label {
+    margin-left: 5px;
+}

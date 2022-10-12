@@ -1,4 +1,3 @@
-import Navbar from './components/layout/navbar/Navbar';
 import Blog from './components/Blog/Blog';
 import './App.css';
 import Home from './components/Home/Home';
@@ -7,6 +6,7 @@ import Main from './components/layout/navbar/Main';
 import TopicDetails from './components/TopicDetails/TopicDetails';
 
 function App() {
+
   const router = createBrowserRouter([
     {
       path: '/',
@@ -38,6 +38,7 @@ function App() {
     <div className="App">
       <Outlet></Outlet>
       <RouterProvider router={router}></RouterProvider>
+
     </div>
   );
 }
