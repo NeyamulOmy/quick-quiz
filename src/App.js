@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import Main from './components/layout/navbar/Main';
 import TopicDetails from './components/TopicDetails/TopicDetails';
 import { ToastContainer } from 'react-toastify';
+import Statistics from './components/Statistics/Statistics';
 
 function App() {
 
@@ -21,6 +22,12 @@ function App() {
         {
           path: 'blog',
           element: <Blog></Blog>
+        },
+        {
+          path: 'statistics',
+          loader: async () => fetch('https://openapi.programming-hero.com/api/quiz'),
+          element: <Statistics></Statistics>
+
         },
         {
           path: 'topic/:topicId',
