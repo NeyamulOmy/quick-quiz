@@ -1,19 +1,20 @@
 import React from 'react';
 import './Questions.css';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Questions = ({ question }) => {
     const notify = (option, ans) => {
+        let msg = '';
         if (ans === option) {
-            toast('Correct!', {
-                position: toast.POSITION.TOP_CENTER
-            })
+            msg = 'Correct!';
         }
         else {
-            toast('Wrong', {
-                position: toast.POSITION.TOP_CENTER
-            })
+            msg = 'Wrong!';
         }
+        toast(msg, {
+            position: toast.POSITION.TOP_CENTER,
+            toastId: 'wrong'
+        })
     }
     let qs = question.question;
     qs = qs.replace('<p>', '');
@@ -29,10 +30,11 @@ const Questions = ({ question }) => {
             <div className='left-align f20px grid'>
                 {options.map(option => <div><input onClick={() => { notify(option, question.correctAnswer) }} type="radio" id={option} name={question.id} value={option} />
                     <label for="html">{option}</label></div>)}
-                <ToastContainer />
+
             </div>
 
         </div>
+
     );
 };
 

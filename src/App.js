@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import Main from './components/layout/navbar/Main';
 import TopicDetails from './components/TopicDetails/TopicDetails';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
 
@@ -38,7 +39,7 @@ function App() {
     <div className="App">
       <Outlet></Outlet>
       <RouterProvider router={router}></RouterProvider>
-
+      <ToastContainer />
     </div>
   );
 }
