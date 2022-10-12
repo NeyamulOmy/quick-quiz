@@ -7,3 +7,38 @@
     margin-bottom: 50px;
     padding: 20px 50px;
 }
+
+@media only screen and (max-width: 600px) {
+    .blogs {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .blogs {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .blogs {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .blogs {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .blog {
+        margin-bottom: 50px;
+        padding: 20px 50px;
+    }
+}

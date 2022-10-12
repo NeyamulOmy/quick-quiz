@@ -3,6 +3,54 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 20px;
-    column-gap: 20px;
+    column-gap: 10px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .card-container {
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 20px;
+        column-gap: 10px;
+
+    }
 
 }

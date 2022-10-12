@@ -13,3 +13,7 @@ nav {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.full-width {
+    width: 100%;
+}

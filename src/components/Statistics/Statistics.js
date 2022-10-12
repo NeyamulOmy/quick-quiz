@@ -6,14 +6,16 @@ const Statistics = () => {
     const stats = useLoaderData();
 
     return (
-
-        <BarChart width={500} height={400} data={stats.data}>
-            <Bar dataKey="total" fill="#8884d8" />
-            <XAxis dataKey="name" />
-            <YAxis />
-        </BarChart>
-
-
+        <div className='container'>
+            <ResponsiveContainer width="100%" height="100%">
+                <BarChart width={400} height={300} data={stats.data}>
+                    <Bar dataKey="total" fill="#8884d8" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
+                </BarChart>
+            </ResponsiveContainer>
+        </div>
     );
 };
 
